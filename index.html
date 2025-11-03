@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> GOLDNESS PAWAN GAMER </title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- 🔹 Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- 🔹 Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="./vipinimages/logo.png" alt="Logo" class="logo">
+      <h1> GOLDNESS PAWAN GAMER </h1>
+    </div>
+
+    <div class="nav-center">
+      <div class="dropdown">
+        <button class="dropbtn" id="menuToggle">Home ▼</button>
+        <div class="dropdown-content" id="menuContent">
+          <a href="#about">About</a>
+          <a href="#games">Games</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#download">Game Download</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <input type="text" id="searchBox" placeholder="Search...">
+      <button id="searchBtn">🔍</Search></button>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Experience Real Indian Vehicles in 3D!</h2>
+      <h2>Goldness Pawan Gamer</h2>
+      <p>Drive Indian Trucks, Indian Tractors,& Indian Bus 3D Games realistic roads.</p>
+      <button class="play-now">Play Now</button>
+    </div>
+  </section>
+
+  <!-- 🔹 Games Section -->
+  <section id="games">
+    <h2>Our Games</h2>
+    <div class="game-cards">
+      <div class="game-card">
+        <img src="./vipinimages/truck.jpg" alt="Truck Game">
+        <h3>Indian Truck Simulator 3D</h3>
+        <a href="https://youtu.be/C7e7RVDO4oo?si=AaMf0QithPAtDkrC"target="blank">
+         <button>Play</button>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=tycoon.building.simulator.games.aldagames.com" target="blank">
+        <button >Download</button>
+        </a>
+      </div>
+      <div class="game-card">
+        <img src="./vipinimages/tractor.jpg" alt="Tractor Game">
+        <h3>Indian Tractor Simulator 3D</h3>
+        <a href="https://youtu.be/3ucGjGc7-3Y?si=SYrDWsgQsrXip7kX"target="blank">
+          <button>Play</button>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.ANGamingStudio.IndianVehiclesSimulator3d" target="blank">
+        <button>Download</button>
+      </a>
+      </div>
+
+      <div class="game-card">
+        <img src="./vipinimages/bus.jpg" alt="Bus Game">
+        <h3>Indian Bus Simulator 3D</h3>
+        <a href="https://youtu.be/m6yPdTD3lVs?si=pBfk1SqVtLigfRDG"target="blank">
+        <button>Play</button>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.zuuks.bus.simulator.ultimate.india" target="blank">
+        <button>Download</button>
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Gallery Section -->
+  <section id="gallery">
+    <h2>Game Gallery</h2>
+    <div class="gallery-grid">
+      <img src="./vipinimages/bus.jpg" alt="Screenshot 1">
+      <img src="./vipinimages/tractor.jpg" alt="Screenshot 2">
+      <img src="./vipinimages/truck.jpg" alt="Screenshot 3">
+      <img src="./vipinimages/bus.jpg" alt="Screenshot 4">
+      <img src="./vipinimages/tractor.jpg" alt="Screenshot 5">
+      <img src="./vipinimages/truck.jpg" alt="Screenshot 6">
+    </div>
+  </section>
+
+ 
+
+  <!-- 🔹 About Section -->
+  <section id="about">
+    <h2>About the Game</h2>
+    <p>
+      Indian Vehicles Simulator 3D is a series of realistic driving games  featuring Indian-style trucks, tractors, and buses. Experience the roads, traffic, and vehicles of India in full 3D detail!
+    </p>
+  </section>
+
+  <!-- 🔹 Download Section -->
+  <section id="download">
+    <h2>Download the Game</h2>
+    <div class="download-buttons">
+      <button><a href="https://play.google.com/store/apps/details?id=com.ANGamingStudio.IndianVehiclesSimulator3d"class="btn" download>Download for android</a></button>
+      <button><a href="https://apps.microsoft.com/detail/9PB5JH26KG5G?hl=en-us&gl=IN&ocid=pdpshare"class="btn" download>Download for windows</a></button></button>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://youtube.com/@Goldnesspawangamer" target="_blank"> ▶️YouTube</a>
+      <a href="https://instagram.com/@goldness_pawan_gamer" target="_blank"> 🅾𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦</a>
+      <a href="https://facebook.com/@pawan kumar" target="_blank">ⓕ𝐟𝐚𝐜𝐞𝐛𝐨𝐨𝐤</a>
+      <a href="https://t.me/Vipin9054" target="_blank"> ➤Telegram</a>
+      <a href="mailto:diwakarpczone@gmail.com"><target="_blank">💌Gmail</a>
+    </div>
+
+    <div class="owner">
+      <p>Website Owner & Developer — <strong>Vipin Diwakar</strong></p>
+    </div>
+  </footer>
+  <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const menuContent = document.getElementById('menuContent');
+
+  // Toggle dropdown on click
+  menuToggle.addEventListener('click', function (e) {
+    e.stopPropagation(); // click ka propagation rokta hai
+    menuContent.classList.toggle('show');
+  });
+
+  // Click outside se close
+  window.addEventListener('click', function () {
+    if (menuContent.classList.contains('show')) {
+      menuContent.classList.remove('show');
+    }
+  });
+</script>
+
+</body>
+</html>
